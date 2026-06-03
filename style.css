@@ -1,0 +1,388 @@
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Configurações gerais */
+
+body {
+    background-color: #111;
+    color: white;
+
+    font-family: "Play", sans-serif;
+}
+
+#banner{
+    position: relative;
+
+    width: 100%;
+    height: 500px;
+
+    overflow: hidden;
+}
+
+#banner img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+#banner-content {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+
+#banner-content h1{
+    font-size: 5rem;
+
+    margin-bottom: 20px;
+}
+
+#banner-content p{
+    font-size: 1.5rem;
+
+    margin-bottom: 30px;
+}
+
+#imagem-descricao{
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 40px;
+
+    padding: 50px;
+}
+
+#imagem-descricao img{
+    width: 300px;
+
+    border-radius: 10px;
+}
+
+#descricao{
+    max-width: 600px;
+}
+
+#desricao h2{
+    font-size: 2.5rem;
+
+    margin-bottom: 20px;
+}
+
+#desricao p{
+    line-height: 1.8;
+
+    font-size: 1.1rem;
+}
+
+#prints{
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 40px;
+
+    padding: 50px;
+}
+
+#roll{
+     align-items: center;
+
+    justify-content: center;
+}
+
+#titulo{
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+#roll img{
+    width: 300px;
+
+    border-radius: 10px;
+
+    margin-top: 30px;
+}
+
+#trailer{
+    padding: 80px 50px;
+
+    text-align: center;
+}
+
+#trailer video{
+    width: 80%;
+
+    max-width: 1000px;
+
+    border-radius: 15px;
+}
+
+#botao{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#steam-button{
+    width: 300px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 15px 30px;
+
+    background-color: #1b2838;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    transition: 0.3s;
+
+    margin-bottom: 30px;
+}
+
+#steam-button:hover{
+    background-color: #2a475e;
+
+    transform: scale(1.05);
+}
+
+#steam-button img{
+    width: 30px;
+
+    margin-right: 10px;
+}
+
+footer{
+    padding: 40px 20px;
+
+    background-color: #0d0d0d;
+
+    text-align: center;
+}
+
+footer h3{
+    margin-bottom: 20px;
+
+    font-size: 1.5rem;
+}
+
+#social-links{
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-bottom: 20px;
+}
+
+#social-links img{
+    width: 40px;
+
+    transition: 0.3s;
+}
+
+#social-links img:hover{
+    transform: scale(1.2);
+}
+
+nav{
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 50px;
+
+    background-color: #000;
+}
+
+#nav-left{
+    display: flex;
+
+    align-items: center;
+
+    gap: 50px;
+}
+#nav-left img{
+    width: 50px;
+}
+
+#nav-left ul{
+    display: flex;
+
+    gap: 30px;
+
+    list-style: none;
+}
+
+#nav-left a{
+    color: crimson;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+#nav-left a:hover{
+    color: deeppink;
+}
+
+#nav-social{
+    display: flex;
+
+    gap: 20px;
+
+    align-items: center;
+}
+
+#nav-social img{
+    width: 30px;
+}
+
+#imagem-convite{
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 40px;
+
+    padding: 50px;
+
+    margin-top: 100px;
+}
+
+#imagem-convite img{
+    width: 500px;
+
+    border-radius: 10px;
+}
+
+#convite{
+    max-width: 600px;
+}
+
+#convite a{
+    text-decoration: none;
+}
+
+#convite h2{
+    color: #000;
+
+    font-weight: bold;
+
+    font-size: 2.5rem;
+
+    margin-bottom: 20px;
+
+    text-decoration: none;
+}
+
+#convite p{
+    color: #000;
+    
+    font-weight: bold;
+
+    line-height: 1.8;
+
+    font-size: 1.1rem;
+}
+
+#time{
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+#time img{
+    width: 300px;
+
+    border-radius: 10px;
+
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    #banner-content h1{
+        font-size: 3rem;
+    }
+
+    #banner-content p{
+        font-size: 1rem;
+    }
+
+    #banner img{
+    object-position: left;
+}
+
+    #imagem-descricao {
+        flex-direction: column;
+        
+        text-align: center;
+
+        padding: 30px 20px;
+    }
+
+    #imagem-descricao img{
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #trailer iframe,
+    #trailer video{
+        width: 100%;
+    }
+
+    #social-links img{
+        width: 30px;
+    }
+
+    nav{
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    #nav-left{
+        flex-direction: column;
+
+        gap: 20px;
+    }
+}
