@@ -128,8 +128,12 @@ body {
     text-align: center;
 }
 
-#trailer video{
+#trailer iframe{
     width: 80%;
+
+    aspect-ratio: 16 / 9;
+
+    border: none;
 
     max-width: 1000px;
 
@@ -365,8 +369,7 @@ nav{
         max-width: 400px;
     }
 
-    #trailer iframe,
-    #trailer video{
+    #trailer iframe{
         width: 100%;
     }
 
